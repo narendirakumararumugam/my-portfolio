@@ -13,7 +13,7 @@ const DEV_OPEN_TO_ROLES = import.meta.env.VITE_DEV_OPEN_TO_ROLES;
 
 const PHRASES = [
   "Building APIs.",
-  "Designing Systems.",
+  "Designing AI Systems.",
   "Scaling Data Pipelines.",
   "Modernizing Legacy Apps.",
 ];
@@ -74,7 +74,7 @@ export function Hero() {
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            I build enterprise systems with{" "}
+            I build enterprise applications with{" "}
             <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
               Java
             </code>
@@ -86,14 +86,31 @@ export function Hero() {
             <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
               Angular
             </code>
-            , and distributed data pipelines on{" "}
+            , develop distributed data pipelines using{" "}
             <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
-              Spark
+              Apache Spark
             </code>{" "}
-            /{" "}
+            and{" "}
             <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
-              Databricks
+              Azure Databricks
             </code>
+            , and design enterprise AI solutions with{" "}
+            <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
+              Spring AI
+            </code>
+            ,{" "}
+            <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
+              Azure OpenAI
+            </code>
+            ,{" "}
+            <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
+              RAG
+            </code>
+            , and{" "}
+            <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-sm text-foreground">
+              MCP
+            </code>
+            .
           </p>
 
           <div className="mt-8 flex max-w-xl items-center gap-3 rounded-lg border border-border bg-card/60 px-4 py-3 font-mono text-sm backdrop-blur">

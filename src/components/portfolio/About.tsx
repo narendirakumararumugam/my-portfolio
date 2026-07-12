@@ -22,42 +22,58 @@ export function About() {
             <div>
               <h3 className="text-2xl font-bold"># Hi, I'm {import.meta.env.VITE_DEV_NAME} 👋</h3>
               <p className="mt-3 text-muted-foreground">
-                <strong className="text-foreground">3+ years of experience</strong> building
-                enterprise applications with Java, Spring Boot, Angular, Apache Spark, Databricks,
-                and Azure. I take end-to-end ownership — from database schema and REST APIs to
-                Angular UIs and distributed data pipelines.
+                <strong className="text-foreground">3+ years of experience</strong> designing and
+                developing enterprise applications using Java, Spring Boot, Angular, Apache Spark,
+                Databricks, and Microsoft Azure. Passionate about building scalable backend systems,
+                distributed data platforms, and modern AI-powered enterprise solutions with
+                end-to-end ownership.
               </p>
             </div>
+
             <div>
               <h4 className="font-mono text-sm text-primary">## What I do</h4>
               <ul className="mt-2 space-y-1.5 text-muted-foreground">
                 <li>
-                  • Develop Spark-based ETL services on Azure Databricks processing{" "}
-                  <strong className="text-foreground">~11 TB of retailer data monthly</strong>
+                  • Develop cloud-native ETL services processing{" "}
+                  <strong className="text-foreground">~11 TB of retailer data monthly</strong> using
+                  Apache Spark and Azure Databricks.
                 </li>
+
                 <li>
-                  • Redesigned report processing &amp; SQL execution —{" "}
-                  <strong className="text-foreground">3–5 min → 10–15 s (~95% faster)</strong>
+                  • Optimized SQL execution and report processing, reducing response time from{" "}
+                  <strong className="text-foreground">
+                    3–5 minutes to 10–15 seconds (~95% faster)
+                  </strong>
+                  .
                 </li>
+
                 <li>
-                  • Architected an internal monitoring platform (Spring Boot + Angular) replacing
-                  Excel tracking for 8 apps
+                  • Designed and built an enterprise monitoring platform using Spring Boot, Angular,
+                  and PostgreSQL, replacing manual tracking across{" "}
+                  <strong className="text-foreground">8 enterprise applications</strong>.
                 </li>
+
                 <li>
-                  • Delivered a legacy → Spring Boot / Angular modernization PoC{" "}
-                  <strong className="text-foreground">20 days ahead of schedule</strong>
+                  • Contributed to the design and development of an{" "}
+                  <strong className="text-foreground">Enterprise Multi-Agent AI Platform</strong>{" "}
+                  using Spring AI, Azure OpenAI, RAG, and MCP for intelligent knowledge retrieval
+                  and workflow automation.
                 </li>
+
                 <li>
-                  • Automated retailer onboarding —{" "}
-                  <strong className="text-foreground">~80% less manual config</strong>
+                  • Delivered a legacy Java → Spring Boot / Angular modernization PoC{" "}
+                  <strong className="text-foreground">20 days ahead of schedule</strong> while
+                  implementing secure authentication and reusable UI components.
                 </li>
               </ul>
             </div>
+
             <div>
               <h4 className="font-mono text-sm text-primary">## Currently</h4>
               <p className="mt-2 text-muted-foreground">
-                Migrating core capabilities from a legacy .NET Framework app to a distributed Apache
-                Spark / Databricks architecture on Azure.
+                Building cloud-native data platforms with Apache Spark and Azure Databricks while
+                exploring Enterprise AI using Spring AI, Azure OpenAI, Retrieval-Augmented
+                Generation (RAG), Multi-Agent systems, and Model Context Protocol (MCP).
               </p>
             </div>
           </div>
@@ -73,7 +89,7 @@ export function About() {
               <div className="font-semibold">{DEV_NAME}</div>
               <div className="font-mono text-xs text-muted-foreground">@{DEV_NICKNAME}-dev</div>
               <p className="mt-3 text-sm text-muted-foreground">
-                Full-stack engineer · backend-leaning · Spark &amp; Databricks on Azure.
+                Full-stack engineer · Angular · Spring Boot · RAG
               </p>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
@@ -86,20 +102,6 @@ export function About() {
                   <GraduationCap className="h-3.5 w-3.5" /> CEG Chennai · CSE · GPA 8.89
                 </li>
               </ul>
-              <div className="mt-5 grid grid-cols-3 gap-2 text-center">
-                {[
-                  ["3+y", "exp"],
-                  ["11TB", "/mo"],
-                  ["95%", "faster"],
-                ].map(([n, l]) => (
-                  <div key={l} className="rounded-md border border-border bg-background/40 py-2">
-                    <div className="font-mono text-sm font-bold text-foreground">{n}</div>
-                    <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-                      {l}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 

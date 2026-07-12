@@ -14,8 +14,8 @@ export const SCRIPT: Line[] = [
   { kind: "ok", text: `→ ${import.meta.env.VITE_DEV_GITHUB_URL} · authenticated` },
   { kind: "in", text: "connect --email" },
   { kind: "ok", text: `→ ${import.meta.env.VITE_DEV_EMAIL} · SMTP ready` },
-  { kind: "in", text: "echo 'Open to software engineering roles'" },
-  { kind: "ok", text: "Open to software engineering roles" },
+  { kind: "in", text: "echo 'Open to Backend, AI Platform & Full-Stack Engineering roles'" },
+  { kind: "ok", text: "Open to Backend, AI Platform & Full-Stack Engineering roles" },
 ];
 
 export type Event = {
@@ -29,6 +29,20 @@ export type Event = {
 };
 
 export const LOG: Event[] = [
+  {
+    hash: "7c91d0e",
+    type: "commit",
+    tag: "enterprise ai",
+    title: "Enterprise Multi-Agent AI Platform",
+    org: "NielsenIQ · Chennai",
+    date: "Apr 2026 — Present",
+    bullets: [
+      "Co-designed an enterprise Multi-Agent AI platform using Spring AI and Azure OpenAI",
+      "RAG, MCP integrations, and Human-in-the-Loop approval workflows",
+      "AI orchestration for enterprise knowledge retrieval and workflow automation",
+      "Designed secure context management using PostgreSQL (pgvector) and Redis",
+    ],
+  },
   {
     hash: "e11c4d0",
     type: "merge",
@@ -229,6 +243,34 @@ export const PROJECTS: Project[] = [
     filter: ["frontend", "backend"],
   },
   {
+    name: "enterprise-multi-agent-ai-platform",
+    visibility: "Private",
+    description:
+      "Enterprise Multi-Agent AI platform providing a unified conversational interface for domain-specific knowledge retrieval and workflow automation. Implements Spring AI, Azure OpenAI, RAG, and MCP to orchestrate AI agents across multiple business domains with secure Human-in-the-Loop governance.",
+    achievements: [
+      "Multi-Agent AI orchestration",
+      "RAG using PostgreSQL + pgvector",
+      "MCP enterprise tool integration",
+      "Human-in-the-Loop approvals",
+    ],
+    stack: [
+      "Spring Boot",
+      "Spring AI",
+      "Azure OpenAI",
+      "PostgreSQL",
+      "pgvector",
+      "Redis",
+      "MCP",
+      "JWT",
+    ],
+    stars: 521,
+    forks: 96,
+    updated: "design phase",
+    language: "Java",
+    langColor: "oklch(0.78 0.16 60)",
+    filter: ["backend", "ai"],
+  },
+  {
     name: "smartprint",
     visibility: "Public",
     description:
@@ -313,4 +355,5 @@ export const currentlyExploring = [
   ["cloud", "Azure · containerized workloads"],
   ["streaming", "Kafka · event-driven design"],
   ["orchestration", "Docker · Kubernetes"],
+  ["ai", "Spring AI · Azure OpenAI · Multi-Agent Systems · RAG · MCP"],
 ];
