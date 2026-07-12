@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VITE_DEV_NAME: ${{ secrets.VITE_DEV_NAME }}
+      VITE_DEV_COMPANY: ${{ secrets.VITE_DEV_COMPANY }}
+      VITE_DEV_EMAIL: ${{ secrets.VITE_DEV_EMAIL }}
+      VITE_DEV_GITHUB_URL: ${{ secrets.VITE_DEV_GITHUB_URL }}
+      VITE_DEV_LINKEDIN_URL: ${{ secrets.VITE_DEV_LINKEDIN_URL }}
+      VITE_DEV_PORTFOLIO_VERSION: ${{ secrets.VITE_DEV_PORTFOLIO_VERSION }}
+      VITE_DEV_NICKNAME: ${{ secrets.VITE_DEV_NICKNAME }}
+      VITE_DEV_CURRENT_REGION: ${{ secrets.VITE_DEV_CURRENT_REGION }}
+      VITE_DEV_OPEN_TO_ROLES: ${{ secrets.VITE_DEV_OPEN_TO_ROLES }}
+      VITE_DEV_ROLE: ${{ secrets.VITE_DEV_ROLE }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build app
+        run: npm run build
