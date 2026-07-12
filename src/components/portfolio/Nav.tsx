@@ -117,8 +117,8 @@ export function ResumeButtons() {
         <Mail className="h-4 w-4" /> contact me
       </a>
       <a
-        href="/resume.pdf"
-        download
+        href={`${import.meta.env.BASE_URL}resume.pdf`}
+        download={`${DEV_NAME} Resume.pdf`}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 rounded-md border border-border/60 px-4 py-2.5 text-sm text-muted-foreground transition hover:text-foreground"
